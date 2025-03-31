@@ -1,0 +1,130 @@
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Landing Page */
+.steps {
+    margin: 2rem 0;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+/* Assessment Pages */
+.question-container {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+.rating-container {
+    margin-top: 1rem;
+}
+
+.rating-options {
+    width: 100%;
+}
+
+/* Results Page */
+.career-recommendation, .university-recommendation {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Study Plan */
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: #e9ecef;
+    left: 50px;
+    top: 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.timeline-year {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-year h4 {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-year {
+        width: 60px;
+    }
+    
+    .timeline-year h4 {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+    
+    .timeline-content {
+        padding-left: 1rem;
+    }
+}
+
